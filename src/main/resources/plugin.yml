@@ -1,0 +1,6 @@
+name: Alordproject
+version: '${project.version}'
+main: com.gmail.whim2058.alordproject.Alordproject
+api-version: 1.17
+authors: [ alord2058 ]
+website: https://www.youtube.com/channel/UCvUqfOxafPtHqisYzDBE7yQ
