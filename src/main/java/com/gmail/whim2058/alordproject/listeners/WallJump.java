@@ -43,13 +43,13 @@ public class WallJump implements Listener {
             if (!yblock.getType().equals(Material.AIR) && !wxblock.getType().equals(Material.AIR)) {
                 if (yaw >= 50 && yaw <= 130) {
                     if (velox <= -0.01 && velox >= -1.0 && veloz <= -0.01 && veloz >= -1.0) {
-                        Vector vector = player.getLocation().getDirection().multiply(0.5).setX(velox * -4.25).setY(0.64).setZ(veloz * 5.25);
+                        Vector vector = player.getLocation().getDirection().multiply(0.5).setX(velox * -4.25).setY(0.5).setZ(veloz * 5.25);
                         player.setVelocity(vector);
                         Location location = player.getLocation().subtract(1,0,0);
                         player.playSound(location, Sound.BLOCK_ANCIENT_DEBRIS_STEP,1,1);
                         player.spawnParticle(Particle.CRIT_MAGIC,location,10);
                     } else if (velox <= -0.01 && velox >= -1.0 && veloz <= 1.0 && veloz >= 0.01) {
-                        Vector vector = player.getLocation().getDirection().multiply(0.5).setX(velox * -4.25).setY(0.64).setZ(veloz * 5.25);
+                        Vector vector = player.getLocation().getDirection().multiply(0.5).setX(velox * -4.25).setY(0.5).setZ(veloz * 5.25);
                         player.setVelocity(vector);
                         Location location = player.getLocation().subtract(1,0,0);
                         player.playSound(location, Sound.BLOCK_ANCIENT_DEBRIS_STEP,1,1);
@@ -59,13 +59,13 @@ public class WallJump implements Listener {
             } else if (!yblock.getType().equals(Material.AIR) && !nxblock.getType().equals(Material.AIR)) {
                 if (yaw >= 140 && yaw <= 220 ) {
                     if (velox <= 1.0 && velox >= 0.01 && veloz <= -0.01 && veloz >= -1.0) {
-                        Vector vector = player.getLocation().getDirection().multiply(0.5).setX(velox * 5.25).setY(0.64).setZ(veloz * -4.25);
+                        Vector vector = player.getLocation().getDirection().multiply(0.5).setX(velox * 5.25).setY(0.5).setZ(veloz * -4.25);
                         player.setVelocity(vector);
                         Location location = player.getLocation().subtract(0,0,1);
                         player.playSound(location, Sound.BLOCK_ANCIENT_DEBRIS_STEP,1,1);
                         player.spawnParticle(Particle.CRIT_MAGIC,location,10);
                     } else if (velox <= -0.01 && velox >= -1.0 && veloz <= -0.01 && veloz >= -1.0) {
-                        Vector vector = player.getLocation().getDirection().multiply(0.5).setX(velox * 5.25).setY(0.64).setZ(veloz * -4.25);
+                        Vector vector = player.getLocation().getDirection().multiply(0.5).setX(velox * 5.25).setY(0.5).setZ(veloz * -4.25);
                         player.setVelocity(vector);
                         Location location = player.getLocation().subtract(0,0,1);
                         player.playSound(location, Sound.BLOCK_ANCIENT_DEBRIS_STEP,1,1);
@@ -75,13 +75,13 @@ public class WallJump implements Listener {
             } else if (!yblock.getType().equals(Material.AIR) && !exblock.getType().equals(Material.AIR)) {
                 if (yaw >= 230 && yaw <= 310) {
                     if (velox <= 1.0 && velox >= 0.01 && veloz <= 1.0 && veloz >= 0.01) {
-                        Vector vector = player.getLocation().getDirection().multiply(0.5).setX(velox * -4.25).setY(0.64).setZ(veloz * 5.25);
+                        Vector vector = player.getLocation().getDirection().multiply(0.5).setX(velox * -4.25).setY(0.5).setZ(veloz * 5.25);
                         player.setVelocity(vector);
                         Location location = player.getLocation().subtract(-1,0,0);
                         player.playSound(location, Sound.BLOCK_ANCIENT_DEBRIS_STEP,1,1);
                         player.spawnParticle(Particle.CRIT_MAGIC,location,10);
                     } else if (velox <= 1.0 && velox >= 0.01 && veloz <= -0.01 && veloz >= -1.0) {
-                        Vector vector = player.getLocation().getDirection().multiply(0.5).setX(velox * -4.25).setY(0.64).setZ(veloz * 5.25);
+                        Vector vector = player.getLocation().getDirection().multiply(0.5).setX(velox * -4.25).setY(0.5).setZ(veloz * 5.25);
                         player.setVelocity(vector);
                         Location location = player.getLocation().subtract(-1,0,0);
                         player.playSound(location, Sound.BLOCK_ANCIENT_DEBRIS_STEP,1,1);
@@ -91,13 +91,13 @@ public class WallJump implements Listener {
             } else if (!yblock.getType().equals(Material.AIR) && !sxblock.getType().equals(Material.AIR)) {
                 if (yaw >= 320 && yaw <= 360 || yaw >= 0 && yaw <= 40 ) {
                     if (velox <= -0.01 && velox >= -1.0 && veloz <= 1.0 && veloz >= 0.01) {
-                        Vector vector = player.getLocation().getDirection().multiply(0.5).setX(velox * 5.25).setY(0.64).setZ(veloz * -4.25);
+                        Vector vector = player.getLocation().getDirection().multiply(0.5).setX(velox * 5.25).setY(0.5).setZ(veloz * -4.25);
                         player.setVelocity(vector);
                         Location location = player.getLocation().subtract(0,0,-1);
                         player.playSound(location, Sound.BLOCK_ANCIENT_DEBRIS_STEP,1,1);
                         player.spawnParticle(Particle.CRIT_MAGIC,location,10);
                     } else if (velox <= 1.0 && velox >= 0.01 && veloz <= 1.0 && veloz >= 0.01) {
-                        Vector vector = player.getLocation().getDirection().multiply(0.5).setX(velox * 5.25).setY(0.64).setZ(veloz * -4.25);
+                        Vector vector = player.getLocation().getDirection().multiply(0.5).setX(velox * 5.25).setY(0.5).setZ(veloz * -4.25);
                         player.setVelocity(vector);
                         Location location = player.getLocation().subtract(0,0,-1);
                         player.playSound(location, Sound.BLOCK_ANCIENT_DEBRIS_STEP,1,1);
