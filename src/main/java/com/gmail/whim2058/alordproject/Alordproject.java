@@ -10,7 +10,7 @@ public final class Alordproject extends JavaPlugin {
         // Plugin startup logic
         getServer().getPluginManager().registerEvents(new WallJump(), this);
 
-        System.out.println("starting up WallJump Plugin ver.1.0!");
+        System.out.println("starting up WallJump Plugin ver.1.0.1!");
         System.out.println("Developer:Alord2058");
     }
 
