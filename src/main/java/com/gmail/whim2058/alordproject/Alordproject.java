@@ -17,6 +17,6 @@ public final class Alordproject extends JavaPlugin {
     @Override
     public void onDisable() {
         // Plugin shutdown logic
-        System.out.println("shutting down WallJump Plugin ver.1.0...");
+        System.out.println("shutting down WallJump Plugin ver.1.0.1...");
     }
 }
